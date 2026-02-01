@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Planos</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#05080d;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+display:flex;
+gap:40px;
+padding:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+width:300px;
+border-radius:18px;
+padding:25px 22px 30px;
+background:linear-gradient(180deg,#2c4f95,#454b7a);
+color:white;
+position:relative;
+box-shadow:0 20px 40px rgba(0,0,0,.6);
+}
+
+.badge{
+background:#0fb0b9;
+padding:12px;
+border-radius:25px;
+text-align:center;
+font-weight:bold;
+letter-spacing:1px;
+margin-bottom:20px;
+}
+
+.subtitle{
+text-align:center;
+opacity:.8;
+margin-bottom:15px;
+}
+
+.price{
+font-size:46px;
+font-weight:bold;
+text-align:center;
+}
+
+.price span{
+font-size:16px;
+font-weight:normal;
+}
+
+.desc{
+text-align:center;
+margin:10px 0 15px;
+opacity:.9;
+}
+
+hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,.2);
+margin:15px 0;
+}
+
+ul{
+list-style:none;
+}
+
+li{
+margin:12px 0;
+display:flex;
+gap:10px;
+align-items:flex-start;
+font-size:14px;
+}
+
+li::before{
+content:"✔";
+color:#2cffc8;
+font-weight:bold;
+}
+
+.btn{
+margin-top:25px;
+display:block;
+text-align:center;
+background:linear-gradient(90deg,#ff007a,#ff3aa0);
+padding:14px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.small{
+font-size:13px;
+opacity:.8;
+text-align:center;
+margin-top:4px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- START -->
+<div class="card">
+<div class="badge">START</div>
+
+<div class="subtitle">ACESSO VITALÍCIO</div>
+
+<div class="price">R$ 19,90 <span>único</span></div>
+
+<div class="desc">Ideal para uso pessoal</div>
+
+<hr>
+
+<ul>
+<li>Crie até 3 BioLinks personalizados</li>
+<li>Sem precisar de hospedagem ou domínio</li>
+<li>Atualizações inclusas, sem custo adicionais</li>
+<li>Suporte</li>
+</ul>
+
+<a class="btn" href="https://milenacamata.com.br" target="_blank">🛒 Escolher Plano</a>
+</div>
+
+<!-- AGENCIA -->
+<div class="card">
+<div class="badge">AGÊNCIA</div>
+
+<div class="subtitle">ACESSO VITALÍCIO</div>
+
+<div class="price">R$ 39,90 <span>único</span></div>
+
+<div class="desc">Perfeito para pequenas agências e prestadores de serviço</div>
+
+<hr>
+
+<ul>
+<li>Crie até 30 BioLinks simultaneamente</li>
+<li>Domínios personalizados ilimitados</li>
+<li>Total liberdade de personalização</li>
+<li>Sem necessidade de hospedagem ou domínio próprio</li>
+<li>Ideal para quem vende ou gerência links da bio</li>
+</ul>
+
+<a class="btn" href="https://milenacamata.com.br" target="_blank">🛒 Escolher Plano</a>
+</div>
+
+<!-- FULL -->
+<div class="card">
+<div class="badge">FULL</div>
+
+<div class="price">R$ 59,90 <span>/mês</span></div>
+
+<div class="desc">Perfeito para designers e produtores</div>
+
+<hr>
+
+<ul>
+<li>Crie BioLinks ilimitado</li>
+<li>Atualizações automáticas inclusas</li>
+<li>Acesso a todos os modelos premium</li>
+<li>Ideal para quem vive do digital</li>
+<li>Ganhe tempo, autoridade e resultados reais</li>
+<li>Aulas explicativas</li>
+<li>Suporte personalizado</li>
+</ul>
+
+<a class="btn" href="https://milenacamata.com.br" target="_blank">🛒 Escolher Plano</a>
+</div>
+
+</div>
+
+</body>
+</html>
