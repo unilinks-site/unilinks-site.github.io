@@ -2,308 +2,203 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Link na Bio - Planos</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planos</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
 background:radial-gradient(circle at top,#08122a 0%,#030716 60%);
 color:#fff;
-text-align:center;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .container{
-max-width:1100px;
-margin:auto;
-padding:40px 16px;
+display:flex;
+gap:40px;
+padding:40px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-img{
-max-width:100%;
-border-radius:8px;
-display:block;
-margin:20px auto;
+.card{
+width:300px;
+border-radius:18px;
+padding:25px 22px 30px;
+background:linear-gradient(180deg,#2c4f95,#454b7a);
+color:white;
+position:relative;
+box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
 
-h1{
-font-size:32px;
-line-height:1.3;
-margin:25px 0;
+.badge{
+background:#0fb0b9;
+padding:12px;
+border-radius:25px;
+text-align:center;
+font-weight:bold;
+letter-spacing:1px;
+margin-bottom:20px;
 }
 
-.highlight{
-color:#ffcc00;
-}
-
-p{
-line-height:1.6;
-opacity:.9;
-margin:20px 0;
-}
-
-/* BOTÃO AMARELO */
-
-.btn{
-background:#ffcc00;
-color:#000;
-padding:14px 30px;
-border-radius:6px;
-display:inline-block;
-margin:35px auto;
-font-weight:700;
-text-decoration:none;
-}
-
-/* SEÇÕES */
-
-.section{
-margin:60px 0;
-}
-
-/* PASSOS */
-
-.steps{
-display:grid;
-gap:18px;
-max-width:700px;
-margin:auto;
-}
-
-.step{
-background:#071638;
-padding:18px;
-border-radius:10px;
-text-align:left;
-}
-
-/* FAQ */
-
-.faq{
-background:#071638;
-padding:15px;
-border-radius:10px;
-margin:12px auto;
-max-width:700px;
-text-align:left;
-}
-
-/* PLANOS */
-
-.plans{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:22px;
-margin-top:40px;
-}
-
-.plan{
-background:#081b3d;
-border-radius:20px;
-padding:25px 20px;
-box-shadow:0 0 30px rgba(0,0,0,.6);
-}
-
-.plan h3{
-margin-bottom:10px;
+.subtitle{
+text-align:center;
+opacity:.8;
+margin-bottom:15px;
 }
 
 .price{
-font-size:30px;
-margin:15px 0;
+font-size:46px;
 font-weight:bold;
+text-align:center;
 }
 
-.plan ul{
-list-style:none;
-padding:0;
-margin-top:15px;
-text-align:left;
+.price span{
+font-size:16px;
+font-weight:normal;
 }
 
-.plan li{
-margin:10px 0;
-font-size:14px;
+.desc{
+text-align:center;
+margin:10px 0 15px;
 opacity:.9;
 }
 
-/* BOTÃO PLANO */
+hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,.2);
+margin:15px 0;
+}
 
-.select{
-background:#ff1e78;
-padding:12px;
-border-radius:6px;
+ul{
+list-style:none;
+}
+
+li{
+margin:12px 0;
+display:flex;
+gap:10px;
+align-items:flex-start;
+font-size:14px;
+}
+
+li::before{
+content:"✔";
+color:#2cffc8;
+font-weight:bold;
+}
+
+.btn{
+margin-top:25px;
 display:block;
-margin-top:20px;
-color:#fff;
+text-align:center;
+background:linear-gradient(90deg,#ff007a,#ff3aa0);
+padding:14px;
+border-radius:30px;
+color:white;
 text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.small{
+font-size:13px;
+opacity:.8;
 text-align:center;
+margin-top:4px;
 }
 
-/* RODAPÉ */
-
-.footer{
-opacity:.5;
-font-size:12px;
-margin-top:40px;
-}
-
-/* MOBILE CENTRALIZADO */
-
-@media(max-width:768px){
-
-h1{
-font-size:24px;
-}
-
-.container{
-padding:30px 14px;
-}
-
-.steps,
-.faq{
-text-align:center;
-}
-
-.step,
-.faq{
-text-align:left;
-}
-
-.plans{
-grid-template-columns:1fr;
-}
-
-.plan{
-max-width:340px;
-margin:auto;
-}
-
-}
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<!-- TOPO -->
-<img src="imagem-topo.png">
+<!-- START -->
+<div class="card">
+<div class="badge">START</div>
 
-<h1>Chegou a plataforma de <span class="highlight">link na bio</span> que vai muito além do básico.</h1>
+<div class="subtitle">ACESSO VITALÍCIO</div>
 
-<img src="imagem-central-1.png">
-<img src="imagem-central-2.png">
+<div class="price">R$ 19,90 <span>único</span></div>
 
-<p>DESIGNER PRONTO<br>VISUAL CLEAN E RESPONSIVO<br>SEM PAGAR DOMÍNIO E HOSPEDAGEM</p>
+<div class="desc">Ideal para uso pessoal</div>
 
-<!-- BLOCO IMAGEM -->
-<div class="section">
-<img src="imagem-bloco-meio.png">
-</div>
+<hr>
 
-<a class="btn">COMO CRIAR SEU LINK EM MINUTOS?</a>
-
-<!-- PASSOS -->
-<div class="steps">
-
-<div class="step">
-<b>#1</b> Acesse o site (link está na Bio) e faça seu cadastro.
-</div>
-
-<div class="step">
-<b>#2</b> Escolha o plano que mais combina com você.
-</div>
-
-<div class="step">
-<b>#3</b> Após o pagamento, acesse seu painel.
-</div>
-
-<div class="step">
-<b>#4</b> Copie o link gerado e cole na bio do Instagram.
-</div>
-
-</div>
-
-<!-- IMAGEM -->
-<div class="section">
-<img src="imagem-passo.png">
-</div>
-
-<!-- FAQ -->
-<h2>Por que escolher a gente?</h2>
-
-<div class="faq">Atendimento ao cliente – suporte rápido.</div>
-<div class="faq">Privacidade – dados protegidos.</div>
-<div class="faq">Qualidade – foco em entregar o melhor.</div>
-
-<!-- IMAGEM -->
-<div class="section">
-<img src="imagem-final-meio.png">
-</div>
-
-<h2>Escolha seu plano, pague uma vez e acesse por toda a vida.</h2>
-
-<!-- PLANOS -->
-<div class="plans">
-
-<div class="plan">
-<h3>START</h3>
-<div class="price">R$ 19,90</div>
 <ul>
-<li>✔ Acesso vitalício</li>
-<li>✔ Ideal uso pessoal</li>
-<li>✔ Criação de links</li>
-<li>✔ Suporte</li>
+<li>Crie até 3 BioLinks personalizados</li>
+<li>Sem precisar de hospedagem ou domínio</li>
+<li>Atualizações inclusas, sem custo adicionais</li>
+<li>Suporte</li>
 </ul>
-<a class="select" href="vendas.com">Escolher Plano</a>
+<br>
+<br>
+<a class="btn" href="https://pay.cakto.com.br/3djjo9i_466733?affiliate=YHDdas2H" target="_blank">🛒 Escolher Plano</a>
 </div>
 
-<div class="plan">
-<h3>AGÊNCIA</h3>
-<div class="price">R$ 39,90</div>
+<!-- AGENCIA -->
+<div class="card">
+<div class="badge">AGÊNCIA</div>
+
+<div class="subtitle">ACESSO VITALÍCIO</div>
+
+<div class="price">R$ 39,90 <span>único</span></div>
+
+<div class="desc">Perfeito para pequenas agências e prestadores de serviço</div>
+
+<hr>
+
 <ul>
-<li>✔ Clientes ilimitados</li>
-<li>✔ Painel avançado</li>
-<li>✔ Templates</li>
-<li>✔ Suporte</li>
+<li>Crie até 30 BioLinks simultaneamente</li>
+<li>Domínios personalizados ilimitados</li>
+<li>Total liberdade de personalização</li>
+<li>Sem necessidade de hospedagem ou domínio próprio</li>
+<li>Ideal para quem vende ou gerência links da bio</li>
 </ul>
-<a class="select" href="vendas.com">Escolher Plano</a>
+
+<a class="btn" href="https://pay.cakto.com.br/38qgsn9?affiliate=cL7dUnHF" target="_blank">🛒 Escolher Plano</a>
 </div>
 
-<div class="plan">
-<h3>FULL</h3>
-<div class="price">R$ 59,90</div>
+<!-- FULL -->
+<div class="card">
+<div class="badge">FULL</div>
+
+<div class="price">R$ 59,90 <span>/mês</span></div>
+
+<div class="desc">Perfeito para designers e produtores</div>
+
+<hr>
+
 <ul>
-<li>✔ Todos recursos</li>
-<li>✔ Área white label</li>
-<li>✔ Análises</li>
-<li>✔ Suporte premium</li>
+<li>Crie BioLinks ilimitado</li>
+<li>Atualizações automáticas inclusas</li>
+<li>Acesso a todos os modelos premium</li>
+<li>Ideal para quem vive do digital</li>
+<li>Ganhe tempo, autoridade e resultados reais</li>
+<li>Aulas explicativas</li>
+<li>Suporte personalizado</li>
 </ul>
-<a class="select" href="vendas.com">Escolher Plano</a>
+
+<a class="btn" href="https://pay.cakto.com.br/wb4rf33_466741?affiliate=5Ydch3e8" target="_blank">🛒 Escolher Plano</a>
 </div>
 
 </div>
 
-<!-- IMAGEM FINAL -->
-<div class="section">
-<img src="imagem-rodape.png">
-</div>
-
-<div class="footer">
-© 2026 - Todos os direitos reservados
-</div>
-
-</div>
 </body>
 </html>
-
-
-
